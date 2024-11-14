@@ -1,0 +1,66 @@
+//settings
+@import "../../settings/app.colors.style";
+@import "../../settings/app.settings.style";
+
+.default-text {
+  &_small {
+    font-size: $font-size-13;
+    line-height: $line-height-16;
+  }
+
+  &_middle {
+    font-size: $font-size-16;
+    line-height: $line-height-26;
+  }
+
+  &_middle-media {
+    font-size: $font-size-13;
+    line-height: $line-height-16;
+
+    @media screen and (min-width: $screen-sm-min) {
+      font-size: $font-size-16;
+      line-height: $line-height-26;
+    }
+  }
+
+  &_large {
+    font-size: $font-size-24;
+    line-height: $line-height-38;
+  }
+
+  &_extra-large-media {
+    font-size: $font-size-24;
+    line-height: $line-height-38;
+
+    @media screen and (min-width: $screen-sm-min) {
+      font-size: $font-size-36;
+      line-height: $line-height-58;
+    }
+  }
+
+  &_xxl {
+    font-size: $font-size-40;
+    line-height: $line-height-40;
+
+    @media screen and (min-width: $screen-lg-min) {
+      font-size: $font-size-64;
+      line-height: $line-height-102;
+    }
+  }
+
+  &_lighter {
+    color: $text-lighter;
+  }
+
+  &_custom-font {
+    font-family: $custom-font;
+  }
+
+  &_mt-outside {
+    margin-top: -8px;
+  }
+
+  &_ml-small {
+    margin-left: 8px;
+  }
+}

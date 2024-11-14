@@ -1,0 +1,32 @@
+//settings
+@import "../../settings/app.settings.style";
+
+.icon-with-text {
+  display: flex;
+  align-items: center;
+  font-size: $font-size-13;
+  line-height: $line-height-16;
+
+  &_ellipse {
+    min-width: 40px;
+    max-width: 40px;
+    min-height: 40px;
+    max-height: 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:before {
+      content: '';
+      background: url("../../assets/images/border-ellipse.svg") no-repeat;
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 40px;
+      max-width: 40px;
+      min-height: 40px;
+      max-height: 40px;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+//settings
+@import "../../settings/app.colors.style";
+@import "../../settings/app.settings.style";
+
+.search {
+  display: flex;
+  align-items: center;
+  background: $background-gray;
+  border-radius: $border-radius-small;
+  padding: 10px 16px;
+  width: 100%;
+
+  @media screen and (min-width: $screen-tin) {
+    max-width: 204px;
+  }
+
+  &__btn {
+    border: none;
+    min-width: 16px;
+    max-width: 16px;
+    min-height: 16px;
+    max-height: 16px;
+    margin-right: 8px;
+    background: url("../../assets/images/search-icon.svg") no-repeat;
+  }
+
+  &__input {
+    border: none;
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+  }
+}

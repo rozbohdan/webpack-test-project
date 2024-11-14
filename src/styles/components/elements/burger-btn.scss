@@ -1,0 +1,25 @@
+//settings
+@import "../../settings/app.colors.style";
+@import "../../settings/app.settings.style";
+
+.burger-btn {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-width: 20px;
+  max-width: 20px;
+  min-height: 20px;
+  max-height: 20px;
+  background: transparent;
+  border: none;
+
+  @media screen and (min-width: $screen-lg-min) {
+    display: none;
+  }
+
+  &__span {
+    height: 2px;
+    width: 100%;
+    background-color: $background-light;
+  }
+}

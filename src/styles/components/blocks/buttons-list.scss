@@ -1,0 +1,9 @@
+.buttons-list {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+
+  @media screen and (max-width: $screen-sm-min) {
+    padding: 0 8px;
+  }
+}

@@ -1,0 +1,18 @@
+.illustration {
+  &__arm {
+    animation: wave 1.5s ease infinite;
+    transform-origin: bottom;
+  }
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg) translateY(0px);
+  }
+  50% {
+    transform: rotate(3deg) translateY(3px);
+  }
+  100% {
+    transform: rotate(0deg) translateY(0px);
+  }
+}

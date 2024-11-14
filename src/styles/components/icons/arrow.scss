@@ -1,0 +1,12 @@
+.arrow {
+  min-width: 16px;
+  max-width: 16px;
+  min-height: 11px;
+  max-height: 1px;
+  background: url("../../assets/images/arrow.svg") no-repeat;
+  background-size: contain;
+
+  &_rotated {
+    transform: rotate(-180deg);
+  }
+}

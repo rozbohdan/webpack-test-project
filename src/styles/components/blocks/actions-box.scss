@@ -1,0 +1,22 @@
+//settings
+@import "../../settings/app.settings.style";
+
+.actions-box {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 14px 20px;
+
+  @media screen and (max-width: $screen-tin) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &_mb-small {
+    margin-bottom: 14px;
+  }
+
+  &_mt-tiny {
+    margin-top: 2px;
+  }
+}

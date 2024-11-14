@@ -1,0 +1,15 @@
+.home {
+  min-width: 20px;
+  max-width: 20px;
+  min-height: 20px;
+  max-height: 20px;
+  background: url("../../assets/images/home-icon.svg") no-repeat;
+  background-size: contain;
+
+  @media screen and (min-width: $screen-lg-min) {
+    min-width: 26px;
+    max-width: 26px;
+    min-height: 26px;
+    max-height: 26px;
+  }
+}

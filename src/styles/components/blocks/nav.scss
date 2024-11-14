@@ -1,0 +1,59 @@
+//settings
+@import "../../settings/app.colors.style";
+@import "../../settings/app.settings.style";
+
+.nav {
+  background: $background-dark;
+  padding: 16px 24px;
+  z-index: 2;
+  overflow: hidden;
+  box-shadow: 5px 5px 20px 1px $gray-dark;
+
+  @media screen and (min-width: $screen-lg-min) {
+    padding: 16px 43px 40px 43px;
+    transition: 0.5s ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+
+      .links__item-text {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  }
+
+  &__links {
+    @media screen and (max-width: $screen-lg-min) {
+      position: fixed;
+      top: 12px;
+      right: 12px;
+      background: $background-dark;
+      margin-top: 0;
+      height: calc(100% - 106px);
+      padding: 16px 24px;
+      transition: 0.3s ease-in-out;
+      transform: translateX(120%);
+      border-radius: $border-radius-middle;
+      width: 100%;
+      max-width: 280px;
+      opacity: 0;
+
+      &_opened {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @media screen and (min-width: $screen-lg-min) {
+      margin-top: 64px;
+      height: calc(100% - 166px);
+      margin-left: 10px;
+
+      .links__item-text {
+        transform: translateX(100%);
+        opacity: 0;
+      }
+    }
+  }
+}

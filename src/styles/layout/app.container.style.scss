@@ -1,0 +1,52 @@
+//settings
+@import "../settings/app.settings.style";
+
+.container-with-nav {
+  display: flex;
+
+  @media screen and (min-width: $screen-lg-min) {
+    gap: 0 70px;
+  }
+
+  &__nav {
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    top: 24px;
+    height: calc(100vh - 48px);
+    width: 132px;
+
+    @media screen and (max-width: $screen-lg-min) {
+      position: fixed;
+      top: initial;
+      bottom: 12px;
+      left: 12px;
+      right: 12px;
+      width: calc(100% - 24px);
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      height: 70px;
+      border-radius: $border-radius-middle;
+    }
+
+    @media screen and (min-width: $screen-lg-min) {
+      border-radius: $border-radius-large;
+
+      &:hover {
+        width: 280px;
+      }
+    }
+  }
+
+  &__content {
+    padding-top: 32px;
+    width: 100%;
+    padding-bottom: 82px;
+
+    @media screen and (min-width: $screen-lg-min) {
+      width: 60%;
+      padding-bottom: 0;
+    }
+  }
+}

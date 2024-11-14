@@ -1,0 +1,24 @@
+//settings
+@import "../../settings/app.settings.style";
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px 30px;
+
+  &__item {
+    font-size: $font-size-16;
+    line-height: $line-height-26;
+    font-family: $custom-font;
+    opacity: 0.3;
+    transition: 0.3s;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &_active {
+      opacity: 1;
+    }
+  }
+}

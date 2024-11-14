@@ -1,0 +1,59 @@
+@import "../settings/app.colors.style";
+@import "../settings/app.settings.style";
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: $app-font;
+  font-size: $font-size-16;
+  font-weight: $font-weight-regular;
+  line-height: 1.5;
+  color: $text-dark;
+}
+
+.main {
+  flex: 1;
+  position: relative;
+  background: $background-light;
+  padding: 24px 12px;
+
+  @media screen and (min-width: $screen-lg-min) {
+    padding: 24px 30px;
+  }
+
+  @media screen and (min-width: $screen-xl-min) {
+    &:after {
+      content: '';
+      background: url("../../assets/images/spot.svg") no-repeat;
+      background-size: contain;
+      transform: rotate(165deg);
+      position: fixed;
+      right: 32px;
+      bottom: 34px;
+      min-width: 168px;
+      max-width: 168px;
+      min-height: 168px;
+      max-height: 168px;
+    }
+  }
+
+  &__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: $background-dark-lighter;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+
+    @media screen and (max-width: $screen-lg-min) {
+      &_opened {
+        opacity: 1;
+        z-index: 1;
+      }
+    }
+  }
+}
